@@ -9,7 +9,8 @@
 	"scripts": {
 		"start": "webpack-dev-server --mode development --hot --port 3000",
 		"build": "webpack --mode development",
-		"deploy:github": "node deploy-to-github.js"
+		"deploy:github": "node deploy-to-github.js",
+		"cypress:open": "cypress open"
 	},
 	"author": "Alejandro Sanchez",
 	"license": "ISC",
@@ -26,6 +27,7 @@
 		"babel-plugin-transform-class-properties": "^6.24.1",
 		"bc-console": "0.0.2",
 		"css-loader": "^2.1.1",
+		"cypress": "^10.10.0",
 		"error-overlay-webpack-plugin": "^0.4.2",
 		"eslint": "^4.19.1",
 		"eslint-loader": "^2.2.1",

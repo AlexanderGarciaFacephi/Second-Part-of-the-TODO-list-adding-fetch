@@ -18,8 +18,11 @@ const Home = () => {
 		headers: {
 			"Content-Type": "application/json"
 		}
-	}).then(response => response.json())
-	.then(json=>{setlist(response)});
+	})
+		.then(response => response.json())
+		.then(json => {
+			setlist(response);
+		});
 
 	const handleKeyDown = e => {
 		const value = inputValue.trim();
